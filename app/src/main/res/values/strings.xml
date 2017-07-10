@@ -1,0 +1,21 @@
+<resources>
+<!-- Nombre de la app -->
+    <string name="app_name">Menu Opciones</string>
+
+<!-- Text Views de las actividades -->
+    <string name="tvSettings">Texto Ajustes</string>
+    <string name="tvAbout">Texto Acerca de:</string>
+    <string name="miNombre">Ernesto Gálvez</string>
+
+<!-- Textos de menu -->
+    <!-- Menu de opciones -->
+    <string name="menu_about">Acerca de</string>
+    <string name="menu_settings">Ajustes</string>
+    <!-- Menu de contexto -->
+    <string name="menu_edit">Editar</string>
+    <string name="menu_delete">Eliminar</string>
+
+<!-- Mensajes Toast -->
+    <string name="toast_delete">Eliminado</string>
+    <string name="toast_edit">Editar</string>
+</resources>
