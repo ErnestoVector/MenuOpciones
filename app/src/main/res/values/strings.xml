@@ -14,6 +14,9 @@
     <!-- Menu de contexto -->
     <string name="menu_edit">Editar</string>
     <string name="menu_delete">Eliminar</string>
+    <!-- Menu Pop Up -->
+    <string name="menu_view">Ver imagen</string>
+    <string name="menu_view_detail">Detalle de la imagen</string>
 
 <!-- Mensajes Toast -->
     <string name="toast_delete">Eliminado</string>

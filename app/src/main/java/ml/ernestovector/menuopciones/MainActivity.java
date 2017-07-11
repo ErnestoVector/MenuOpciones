@@ -3,11 +3,13 @@ package ml.ernestovector.menuopciones;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.PopupMenu;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -78,5 +80,34 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         return super.onContextItemSelected(item);
+    }
+
+//Menu Pop Up---------------------------------------------------------------------------------------
+    public void levantarMenuPopUp(View v){
+        //Conectamos el Image View con el codigo
+        ImageView imagen = (ImageView) findViewById(R.id.ivImagen);
+        PopupMenu popupMenu = new PopupMenu(this, imagen);   //Creamos un popup
+
+        //Inflamos el popup para poder visualizarlo
+        popupMenu.getMenuInflater().inflate(R.menu.menu_popup, popupMenu.getMenu());
+
+        //Recibe el valor del menu seleccionado
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+
+                switch (item.getItemId()){
+                    case R.id.mView:
+                        Toast.makeText(getBaseContext(), getResources().getString(R.string.menu_view),Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.mViewDetail:
+                        Toast.makeText(getBaseContext(), getResources().getString(R.string.menu_view_detail),Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                return true;
+            }
+        });
+
+        popupMenu.show();   //Mostramos el menu
     }
 }
