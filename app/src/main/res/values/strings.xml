@@ -11,6 +11,7 @@
     <!-- Menu de opciones -->
     <string name="menu_about">Acerca de</string>
     <string name="menu_settings">Ajustes</string>
+    <string name="menu_refresh">Actualizar</string>
     <!-- Menu de contexto -->
     <string name="menu_edit">Editar</string>
     <string name="menu_delete">Eliminar</string>

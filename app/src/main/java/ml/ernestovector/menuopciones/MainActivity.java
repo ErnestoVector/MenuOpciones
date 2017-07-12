@@ -53,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent i_set = new Intent(this, Settings.class);
                 startActivity(i_set);
                 break;
+
+            case R.id.mRefresh:
+                Toast.makeText(this, getResources().getString(R.string.menu_refresh), Toast.LENGTH_SHORT).show();
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
